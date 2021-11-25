@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1921</width>
+    <height>1057</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VAM Tool</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListWidget" name="listWidget_Cont">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>40</y>
+      <width>1121</width>
+      <height>911</height>
+     </rect>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="viewMode">
+     <enum>QListView::IconMode</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ScanToDB">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>0</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scan To DB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_InitDB">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>930</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Database Table</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Open">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>0</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_VarAna">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>960</y>
+      <width>291</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Stop">
+    <property name="geometry">
+     <rect>
+      <x>1790</x>
+      <y>960</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Ind">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>960</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_InsertGame">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Insert Game...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ExecSQL">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>960</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exec SQL</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Game">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>271</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_fileCounter">
+    <property name="geometry">
+     <rect>
+      <x>1630</x>
+      <y>960</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ExecQuery">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>930</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exec Query</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_SQL">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>850</y>
+      <width>451</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_QType">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>0</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_QGender">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>0</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>0</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Author</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_QAuthor">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>0</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>0</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gender</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>0</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_QOffset">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>0</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>0</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Count</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_QCount">
+    <property name="geometry">
+     <rect>
+      <x>1360</x>
+      <y>0</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>0</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Type</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Query">
+    <property name="geometry">
+     <rect>
+      <x>1430</x>
+      <y>0</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Query</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_QName">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>0</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>0</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_GenRecCount">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>930</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Get Count</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_RecCount">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>960</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_CheckVarValid">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>770</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check Var Valid</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_CheckVarSame">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>770</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check Var Repetition</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_CheckVar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>451</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Pic">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>451</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_QueryAtSameVar">
+    <property name="geometry">
+     <rect>
+      <x>1800</x>
+      <y>50</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>View Var</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_VarContent">
+    <property name="geometry">
+     <rect>
+      <x>1600</x>
+      <y>81</y>
+      <width>301</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <property name="viewMode">
+     <enum>QListView::IconMode</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_VarFullPath">
+    <property name="geometry">
+     <rect>
+      <x>1600</x>
+      <y>0</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_QueryAtSameVar_selVarFile">
+    <property name="geometry">
+     <rect>
+      <x>1600</x>
+      <y>50</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Var of Game...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>815</y>
+      <width>451</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Waning: If you HAVE NOT the acknowledge of Database, Don't Operate Below Button!!!</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1921</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
